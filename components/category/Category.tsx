@@ -8,7 +8,7 @@ interface Props {
 const Category: React.FC<Props> = ({ title, name }) => {
   return (
     <header>
-      <div className="flex justify-between p-4">
+      <div className="flex justify-between  p-4">
         <h1 className="dark:text-slate-300 text-black text-xl font-semibold">
           {title}
         </h1>

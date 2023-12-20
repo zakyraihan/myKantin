@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex">
-      <div className="flex flex-col ">
+      <div className="flex flex-col">
         <Category title="Populer" name="Lebih Lengkap" />
         <MenuList />
       </div>

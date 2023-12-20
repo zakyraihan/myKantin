@@ -162,7 +162,7 @@ const MenuList: React.FC = () => {
         </div>
       ))}
       <div className="fixed md:flex hidden top-0 right-0 h-full w-1/4 dark:bg-gray-950  bg-white overflow-y-auto">
-        <div className="flex flex-col overflow-y-scroll">
+        <div className="flex flex-col ">
           <div className="flex dark:text-white justify-center gap-8 text-lg items-center">
             <FaHeart />
             <FaBox />
@@ -204,7 +204,7 @@ const MenuList: React.FC = () => {
                       width={50}
                       className="rounded-md"
                     />
-                    <div className="border-l border-gray-500"></div>
+                    <div className="border-l border-gray-200"></div>
                     {item.pesan}x
                     <div>
                       <p className="text-sm font-semibold dark:text-white">

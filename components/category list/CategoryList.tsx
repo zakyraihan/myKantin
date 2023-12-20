@@ -30,7 +30,7 @@ const CategoryList: React.FC = () => {
   }, []);
 
   return (
-    <div className="overflow-x-scroll">
+    <div className="">
       <section className="flex gap-5 p-4">
         <Link href="/">
           {" "}
@@ -50,7 +50,7 @@ const CategoryList: React.FC = () => {
         {categories.map((category) => (
           <Link key={category.id} href={`/category/${category.id}`}>
             <div
-              className="flex items-center text-white  font-semibold text-2xl justify-center cursor-pointer"
+              className="flex items-center font-semibold text-2xl justify-center cursor-pointer"
               style={{
                 backgroundImage: `url(${category.img})`,
                 backgroundSize: "cover",
