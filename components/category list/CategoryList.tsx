@@ -10,6 +10,7 @@ interface Category {
 
 const CategoryList: React.FC = () => {
   const [categories, setCategories] = useState<Category[]>([]);
+  const [selected, setSelected] = useState<String | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -48,7 +49,11 @@ const CategoryList: React.FC = () => {
           </div>
         </Link>
         {categories.map((category) => (
-          <Link key={category.id} href={`/category/${category.id}`}>
+          <button
+            key={category.id}
+            className="relative"
+            onClick={() => setSelected(category.name)}
+          >
             <div
               className="flex items-center font-semibold text-2xl justify-center cursor-pointer"
               style={{
@@ -61,7 +66,7 @@ const CategoryList: React.FC = () => {
             >
               {category.name}
             </div>
-          </Link>
+          </button>
         ))}
       </section>
     </div>

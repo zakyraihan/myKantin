@@ -51,7 +51,7 @@ const MenuList: React.FC = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get<MenuResponse>(
-          "https://belajar-react.smkmadinatulquran.sch.id/api/populer/all"
+          "https://belajar-react.smkmadinatulquran.sch.id/api/populer/25"
         );
 
         setMenuItems(response.data.data);
@@ -128,6 +128,8 @@ const MenuList: React.FC = () => {
       updateTotal();
     }
   };
+
+
 
   return (
     <div className="md:w-[60rem] flex flex-wrap gap-5 md:gap-10 md:p-5 md:justify-start items-center justify-center">

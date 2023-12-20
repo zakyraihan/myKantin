@@ -18,10 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <Header />
-        <Category title="Category" name="Lebih Lengkap" />
-        <CategoryList />
-        {children}
+        <ReactQuery>
+          {" "}
+          <Header />
+          <Category title="Category" name="Lebih Lengkap" />
+          {children}
+        </ReactQuery>
       </body>
     </html>
   );
