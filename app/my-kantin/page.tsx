@@ -11,7 +11,7 @@ import Image from "next/image";
 import { IoNotifications } from "react-icons/io5";
 import { MdRemoveShoppingCart } from "react-icons/md";
 
-const Pgess = () => {
+const Page = () => {
   const { useKategoriList, useDishList } = useKategoriModule();
   const { data: kategoriData } = useKategoriList();
   const { data: dishData } = useDishList();
@@ -349,4 +349,4 @@ const Pgess = () => {
   );
 };
 
-export default Pgess;
+export default Page;
